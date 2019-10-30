@@ -1,0 +1,18 @@
+<form >
+
+    <div>
+      <label >
+        Group - 1
+      </label>
+      <br>
+      <label >
+        Estudiante : Kevin sequeira sequeira
+      </label> 
+
+      <li *ngFor="let evalue of evalueArray" class="list-group-item list-group-item-action" (click)="openForEdit(evalue)" [class.active]="evalue == selectedEvalue">
+        <span class="badge badge-primary">{{ evalue.numero }}</span>{{evalue.tipo}} - {{ evalue.valor }} 
+    </li>
+
+    </div>
+  
+  </form>
